@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Free" ;
-    src: url("/assets/fonts/Bonechiller\ Free.ttf");
+    src: url("/assets/fonts/Dash-Horizon-Demo.otf");
 }
 
 /* Estilos generales */
@@ -14,28 +14,28 @@ body {
 }
 
 h1 {
+    font-family: "Free";
     text-align: center;
     color: #ffc107;
     text-transform: uppercase;
     padding: 20px;
+    letter-spacing: 5px;
+    font-size:5ch;
 }
 
 /* Formularios */
-form{
-
-    
+.product{
     background-color: #333;
     margin: 10px auto;
     padding: 20px;
     max-width: 400px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
 label {
     display: block;
     margin-bottom: 10px;
-    color: #fff;
 }
 
 input[type="text"],
@@ -58,7 +58,7 @@ button {
     cursor: pointer;
     font-weight: bold;
     text-transform: uppercase;
-    margin: 0 auto; /* Centra horizontalmente */
+    margin: 0 auto; 
 }
 
 button:hover {
@@ -66,14 +66,13 @@ button:hover {
 }
 
 /* Tabla de productos */
-table {
+ .fusilesAsalto-table-events{
     
     background-color: #333;
     margin: 20px auto;
     max-width: 800px;
     border-collapse: collapse;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
 }
 
 th, td {
@@ -88,16 +87,12 @@ th {
     text-transform: uppercase;
 }
 
-th, td:last-child {
-    text-align: center;
-}
 
-/* Botones de edición y eliminación */
 .edit-button {
     background-color: #4caf50;
     color: #fff;
     border: none;
-    padding: 5px 10px;
+    padding: 10px 10px;
     margin-right: 5px;
     border-radius: 5px;
     cursor: pointer;
@@ -106,12 +101,10 @@ th, td:last-child {
 }
 
 .edit-button:hover {
-    background-color: #45a049;
+    background-color: #16771b;
 }
 
 .delete-button {
-    background-color: #f44336;
-    color: #fff;
     border: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -120,14 +113,3 @@ th, td:last-child {
     text-transform: uppercase;
 }
 
-.delete-button:hover {
-    background-color: #e41f1f;
-}
-
-/* Mensaje de no resultados */
-.no-results {
-    text-align: center;
-    padding: 20px;
-    font-weight: bold;
-    color: #f44336;
-}
