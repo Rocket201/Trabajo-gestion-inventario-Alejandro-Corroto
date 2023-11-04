@@ -1,10 +1,8 @@
 import { addProduct } from "./addproduct-4.js";
 import { listProducts } from "./listProduct-4.js" 
 import { searchProduct } from "./searchProduct-4.js";
-/**
- * Autor: Alejandro González Corroto Fernández
- * GitHub: 
- */
+
+
 console.log("js,main carga")
 document.addEventListener("DOMContentLoaded", listProducts);
 

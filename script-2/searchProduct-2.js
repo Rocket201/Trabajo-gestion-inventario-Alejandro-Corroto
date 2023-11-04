@@ -43,7 +43,7 @@ export function searchProduct(searchInput) {
                         listProducts();
                     }
                 } else {
-                    console.log("Índice fuera de rango o producto no encontrado");
+                    console.log("Producto no encontrado");
                 }
             });
 
@@ -53,11 +53,11 @@ export function searchProduct(searchInput) {
                 console.log("Botón BORRAR presionado");
                 const deleteRow = deleteButton.closest('tr');
                 const rowIndex = deleteRow.rowIndex - 1;
-                if (rowIndex >= 0 && rowIndex < results.length) {
+                if (confirm("¿Estás seguro de que deseas borrar este producto?")) {
                     results.splice(rowIndex, 1);
                     deleteRow.remove();
                 } else {
-                    console.log("Índice fuera de rango o producto no encontrado");
+                    console.log("Producto no encontrado");
                 }
             });
             

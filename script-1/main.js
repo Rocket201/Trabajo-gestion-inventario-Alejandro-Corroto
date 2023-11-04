@@ -1,10 +1,12 @@
+/**
+ * Autor: Alejandro González Corroto Fernández
+ * GitHub: https://github.com/Rocket201/Trabajo-gestion-inventario-Alejandro-Corroto.git
+ */
+
 import { addProduct } from "./addproduct.js";
 import { listProducts } from "./listProduct.js" 
 import { searchProduct } from "./searchProduct.js";
-/**
- * Autor: Alejandro González Corroto Fernández
- * GitHub: 
- */
+
 console.log("js,main carga")
 document.addEventListener("DOMContentLoaded", listProducts);
 

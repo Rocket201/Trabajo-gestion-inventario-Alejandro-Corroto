@@ -59,7 +59,7 @@ export const listProducts = () => {
             console.log("Botón BORRAR presionado");
             const deleteRow = deleteButton.closest('tr');
             const rowIndex = deleteRow.rowIndex - 1; 
-            if (rowIndex >= 0 && rowIndex < ametralladoras.length) {
+            if (confirm("¿Estás seguro de que deseas borrar este producto?")) {
                 
                 ametralladoras.splice(rowIndex, 1);
                 deleteRow.remove();
